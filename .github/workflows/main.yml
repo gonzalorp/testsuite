@@ -24,7 +24,7 @@ jobs:
     - name: Install Cypress
       run: npm install cypress
 
-    - name: Run Cypress Problem User
+    - name: Run Cypress Api Test
       run: npx cypress run --spec 'cypress/e2e/apiTest.cy.js'
 
     - name: Run Cypress Standard User Test
