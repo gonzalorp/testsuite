@@ -1,0 +1,28 @@
+{
+  "name": "uitest",
+  "version": "1.0.0",
+  "description": "ui test suite",
+  "main": "index.js",
+  "scripts": {
+    "runner": "cypress open --e2e --browser chrome",
+    "standarduser": "cypress run --spec 'cypress/e2e/standarduser.cy.js'",
+    "performance_glitch_user": "cypress run --spec 'cypress/e2e/performance_glitch_user.cy.js'",
+    "problem_user": "cypress run --spec 'cypress/e2e/problem_user.cy.js'",
+    "apiTest": "cypress run --spec 'cypress/e2e/apiTest.cy.js'"
+  },
+  "keywords": [
+    "cypress",
+    "test"
+  ],
+  "author": "Gonzalo Perin",
+  "license": "ISC",
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "cypress": "^13.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
